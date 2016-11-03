@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-krunner"
-VERSION=5.12.0
+VERSION=5.27.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 Plasma runners library"
@@ -10,8 +10,6 @@ among other things, allows one to type into a text area which causes various
 actions and information that match the text appear as the text is being typed.
 This functionality is provided via plugins loaded at runtime called Runners.
 The KRunner framework is used to write these plugins."
-
-SRC_URI="mirror://kde/stable/frameworks/${VERSION%\.*}/portingAids/${NAME#kf5-}-${VERSION}.tar.xz"
 
 PKG_NAMES="libKF5Runner5 libKF5Runner-devel"
 libKF5Runner5_CONTENTS="
@@ -27,4 +25,5 @@ libKF5Runner_devel_CONTENTS="
 	usr/lib/cmake/KF5Runner/
 	${QT5_MKSPECSDIR#/}/modules/qt_KRunner.pri
 	usr/lib/libKF5Runner.dll.a
+	usr/share/kdevappwizard/templates/
 "
