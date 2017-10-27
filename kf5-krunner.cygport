@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-krunner"
-VERSION=5.35.0
+VERSION=5.39.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 Plasma runners library"
@@ -25,5 +25,6 @@ libKF5Runner_devel_CONTENTS="
 	usr/lib/cmake/KF5Runner/
 	${QT5_MKSPECSDIR#/}/modules/qt_KRunner.pri
 	usr/lib/libKF5Runner.dll.a
+	usr/share/dbus-1/interfaces/kf5_org.kde.krunner1.xml
 	usr/share/kdevappwizard/templates/
 "
