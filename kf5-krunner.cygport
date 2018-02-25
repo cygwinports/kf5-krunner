@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-krunner"
-VERSION=5.39.0
+VERSION=5.43.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 Plasma runners library"
@@ -13,6 +13,7 @@ The KRunner framework is used to write these plugins."
 
 PKG_NAMES="libKF5Runner5 libKF5Runner-devel"
 libKF5Runner5_CONTENTS="
+	etc/xdg/krunner.categories
 	usr/bin/cygKF5Runner-5.dll
 	${QT5_QMLDIR#/}/org/kde/runnermodel/
 	usr/share/doc/
